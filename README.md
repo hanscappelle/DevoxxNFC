@@ -34,11 +34,39 @@ Add the following line to your /etc/apt/sources.list:
 Once RabbitMQ is installed you can accesses the management interface by navigating to http://PI_ADDRESS:55672/#/ .
 The interface will then prompt you for a username and password, by default both of these are guest.
 
+
+## Compile project from source
+
+### Get source
+
+Install git first if not already present
+
+    sudo apt-get install git
+
+And clone this project
+
+    git clone https://github.com/glnds/DevoxxNFC.git
+
+### Compile
+
+Get maven to compile the java project (and it's dependencies) with apt-get. This installation will take some time!
+
+    sudo apt-get install maven2
+    
+Now get the package compiled by executing below command from within the DevoxxNFC project folder. 
+First run also takes time since your repo will be set up. 
+    
+    mvn install
+   
 ## Run ##
+
 usage: DevoxxNFC<br />
  -r,--room <number>     use number to specify the room<br />
  -l,--leds              enables debugging leds<br />
  -p,--platform <name>   specify then platform
+
+    sudo java -jar DevoxxNFC.jar -r 1
+
  
 ## Architectuur
 
