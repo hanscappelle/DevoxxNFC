@@ -26,12 +26,13 @@ Add the following line to your /etc/apt/sources.list:
 <pre><code># deb http://www.rabbitmq.com/debian/ testing main</code></pre>
     # wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
     # sudo apt-key add rabbitmq-signing-key-public.asc
-    # apt-get update.
+    # sudo apt-get update
     # sudo apt-get install rabbitmq-server
     # sudo rabbitmq-plugins enable rabbitmq_management
 	# sudo /etc/init.d/rabbitmq-server restart 
 
-Once RabbitMQ is installed you can accesses the management interface by navigating to your PI's IP address and adding :55672/#/.
+Once RabbitMQ is installed you can accesses the management interface by navigating to http://PI_ADDRESS:55672/#/ .
+The interface will then prompt you for a username and password, by default both of these are guest.
 
 ## Run ##
 usage: DevoxxNFC<br />
