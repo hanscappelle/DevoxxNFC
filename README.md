@@ -51,7 +51,8 @@ And clone this project
 
 Get maven to compile the java project (and it's dependencies) with apt-get. This installation will take some time!
 
-    sudo apt-get install openjdk-6-jdk
+-sudo apt-get install openjdk-6-jdk- You'll need Java 7! Check with java -version what java is installed and with mvn -version wath java version maven uses. Use export JAVA_HOME=`/usr/libexec/java_home -v 1.7` to update JAVA_HOME to java 1.7 if needed.
+    
     sudo apt-get install maven2
     
 Now get the package compiled by executing below command from within the DevoxxNFC project folder. 
